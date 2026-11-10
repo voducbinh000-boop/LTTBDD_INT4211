@@ -1,0 +1,418 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.example.quanlychitieu"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="24"
+9        android:targetSdkVersion="34" />
+10
+11    <uses-permission android:name="android.permission.INTERNET" />
+11-->C:\Users\voduc\.gemini\antigravity\scratch\QuanLyChiTieuAndroid_Updated\QLCT\app\src\main\AndroidManifest.xml:4:5-67
+11-->C:\Users\voduc\.gemini\antigravity\scratch\QuanLyChiTieuAndroid_Updated\QLCT\app\src\main\AndroidManifest.xml:4:22-64
+12    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+12-->C:\Users\voduc\.gemini\antigravity\scratch\QuanLyChiTieuAndroid_Updated\QLCT\app\src\main\AndroidManifest.xml:5:5-77
+12-->C:\Users\voduc\.gemini\antigravity\scratch\QuanLyChiTieuAndroid_Updated\QLCT\app\src\main\AndroidManifest.xml:5:22-74
+13    <uses-permission android:name="android.permission.SCHEDULE_EXACT_ALARM" />
+13-->C:\Users\voduc\.gemini\antigravity\scratch\QuanLyChiTieuAndroid_Updated\QLCT\app\src\main\AndroidManifest.xml:6:5-79
+13-->C:\Users\voduc\.gemini\antigravity\scratch\QuanLyChiTieuAndroid_Updated\QLCT\app\src\main\AndroidManifest.xml:6:22-76
+14    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+14-->C:\Users\voduc\.gemini\antigravity\scratch\QuanLyChiTieuAndroid_Updated\QLCT\app\src\main\AndroidManifest.xml:7:5-81
+14-->C:\Users\voduc\.gemini\antigravity\scratch\QuanLyChiTieuAndroid_Updated\QLCT\app\src\main\AndroidManifest.xml:7:22-78
+15    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+15-->[com.google.firebase:firebase-auth:23.0.0] C:\Users\voduc\.gradle\caches\transforms-4\d709e4dc9a0ed10887260e7367f321b9\transformed\firebase-auth-23.0.0\AndroidManifest.xml:26:5-79
+15-->[com.google.firebase:firebase-auth:23.0.0] C:\Users\voduc\.gradle\caches\transforms-4\d709e4dc9a0ed10887260e7367f321b9\transformed\firebase-auth-23.0.0\AndroidManifest.xml:26:22-76
+16    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+16-->[com.google.android.recaptcha:recaptcha:18.4.0] C:\Users\voduc\.gradle\caches\transforms-4\2f48e59a5a36768b4f7b28c79bb65ddc\transformed\recaptcha-18.4.0\AndroidManifest.xml:9:5-98
+16-->[com.google.android.recaptcha:recaptcha:18.4.0] C:\Users\voduc\.gradle\caches\transforms-4\2f48e59a5a36768b4f7b28c79bb65ddc\transformed\recaptcha-18.4.0\AndroidManifest.xml:9:22-95
+17
+18    <permission
+18-->[androidx.core:core:1.13.0] C:\Users\voduc\.gradle\caches\transforms-4\c34771eb79e6820eee9e256c04f9b780\transformed\core-1.13.0\AndroidManifest.xml:22:5-24:47
+19        android:name="com.example.quanlychitieu.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+19-->[androidx.core:core:1.13.0] C:\Users\voduc\.gradle\caches\transforms-4\c34771eb79e6820eee9e256c04f9b780\transformed\core-1.13.0\AndroidManifest.xml:23:9-81
+20        android:protectionLevel="signature" />
+20-->[androidx.core:core:1.13.0] C:\Users\voduc\.gradle\caches\transforms-4\c34771eb79e6820eee9e256c04f9b780\transformed\core-1.13.0\AndroidManifest.xml:24:9-44
+21
+22    <uses-permission android:name="com.example.quanlychitieu.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+22-->[androidx.core:core:1.13.0] C:\Users\voduc\.gradle\caches\transforms-4\c34771eb79e6820eee9e256c04f9b780\transformed\core-1.13.0\AndroidManifest.xml:26:5-97
+22-->[androidx.core:core:1.13.0] C:\Users\voduc\.gradle\caches\transforms-4\c34771eb79e6820eee9e256c04f9b780\transformed\core-1.13.0\AndroidManifest.xml:26:22-94
+23
+24    <application
+24-->C:\Users\voduc\.gemini\antigravity\scratch\QuanLyChiTieuAndroid_Updated\QLCT\app\src\main\AndroidManifest.xml:9:5-83:19
+25        android:allowBackup="false"
+25-->C:\Users\voduc\.gemini\antigravity\scratch\QuanLyChiTieuAndroid_Updated\QLCT\app\src\main\AndroidManifest.xml:10:9-36
+26        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+26-->[androidx.core:core:1.13.0] C:\Users\voduc\.gradle\caches\transforms-4\c34771eb79e6820eee9e256c04f9b780\transformed\core-1.13.0\AndroidManifest.xml:28:18-86
+27        android:debuggable="true"
+28        android:extractNativeLibs="false"
+29        android:icon="@drawable/ic_logo"
+29-->C:\Users\voduc\.gemini\antigravity\scratch\QuanLyChiTieuAndroid_Updated\QLCT\app\src\main\AndroidManifest.xml:11:9-41
+30        android:label="@string/app_name"
+30-->C:\Users\voduc\.gemini\antigravity\scratch\QuanLyChiTieuAndroid_Updated\QLCT\app\src\main\AndroidManifest.xml:12:9-41
+31        android:supportsRtl="true"
+31-->C:\Users\voduc\.gemini\antigravity\scratch\QuanLyChiTieuAndroid_Updated\QLCT\app\src\main\AndroidManifest.xml:13:9-35
+32        android:testOnly="true"
+33        android:theme="@style/Theme.QuanLyChiTieu" >
+33-->C:\Users\voduc\.gemini\antigravity\scratch\QuanLyChiTieuAndroid_Updated\QLCT\app\src\main\AndroidManifest.xml:14:9-51
+34        <activity
+34-->C:\Users\voduc\.gemini\antigravity\scratch\QuanLyChiTieuAndroid_Updated\QLCT\app\src\main\AndroidManifest.xml:16:9-24:20
+35            android:name="com.example.quanlychitieu.SplashActivity"
+35-->C:\Users\voduc\.gemini\antigravity\scratch\QuanLyChiTieuAndroid_Updated\QLCT\app\src\main\AndroidManifest.xml:17:13-43
+36            android:exported="true"
+36-->C:\Users\voduc\.gemini\antigravity\scratch\QuanLyChiTieuAndroid_Updated\QLCT\app\src\main\AndroidManifest.xml:18:13-36
+37            android:theme="@style/Theme.QuanLyChiTieu.Auth" >
+37-->C:\Users\voduc\.gemini\antigravity\scratch\QuanLyChiTieuAndroid_Updated\QLCT\app\src\main\AndroidManifest.xml:19:13-60
+38            <intent-filter>
+38-->C:\Users\voduc\.gemini\antigravity\scratch\QuanLyChiTieuAndroid_Updated\QLCT\app\src\main\AndroidManifest.xml:20:13-23:29
+39                <action android:name="android.intent.action.MAIN" />
+39-->C:\Users\voduc\.gemini\antigravity\scratch\QuanLyChiTieuAndroid_Updated\QLCT\app\src\main\AndroidManifest.xml:21:17-69
+39-->C:\Users\voduc\.gemini\antigravity\scratch\QuanLyChiTieuAndroid_Updated\QLCT\app\src\main\AndroidManifest.xml:21:25-66
+40
+41                <category android:name="android.intent.category.LAUNCHER" />
+41-->C:\Users\voduc\.gemini\antigravity\scratch\QuanLyChiTieuAndroid_Updated\QLCT\app\src\main\AndroidManifest.xml:22:17-77
+41-->C:\Users\voduc\.gemini\antigravity\scratch\QuanLyChiTieuAndroid_Updated\QLCT\app\src\main\AndroidManifest.xml:22:27-74
+42            </intent-filter>
+43        </activity>
+44        <activity
+44-->C:\Users\voduc\.gemini\antigravity\scratch\QuanLyChiTieuAndroid_Updated\QLCT\app\src\main\AndroidManifest.xml:26:9-29:58
+45            android:name="com.example.quanlychitieu.LoginActivity"
+45-->C:\Users\voduc\.gemini\antigravity\scratch\QuanLyChiTieuAndroid_Updated\QLCT\app\src\main\AndroidManifest.xml:27:13-42
+46            android:theme="@style/Theme.QuanLyChiTieu.Auth"
+46-->C:\Users\voduc\.gemini\antigravity\scratch\QuanLyChiTieuAndroid_Updated\QLCT\app\src\main\AndroidManifest.xml:28:13-60
+47            android:windowSoftInputMode="adjustResize" />
+47-->C:\Users\voduc\.gemini\antigravity\scratch\QuanLyChiTieuAndroid_Updated\QLCT\app\src\main\AndroidManifest.xml:29:13-55
+48        <activity
+48-->C:\Users\voduc\.gemini\antigravity\scratch\QuanLyChiTieuAndroid_Updated\QLCT\app\src\main\AndroidManifest.xml:31:9-34:58
+49            android:name="com.example.quanlychitieu.RegisterActivity"
+49-->C:\Users\voduc\.gemini\antigravity\scratch\QuanLyChiTieuAndroid_Updated\QLCT\app\src\main\AndroidManifest.xml:32:13-45
+50            android:theme="@style/Theme.QuanLyChiTieu.Auth"
+50-->C:\Users\voduc\.gemini\antigravity\scratch\QuanLyChiTieuAndroid_Updated\QLCT\app\src\main\AndroidManifest.xml:33:13-60
+51            android:windowSoftInputMode="adjustResize" />
+51-->C:\Users\voduc\.gemini\antigravity\scratch\QuanLyChiTieuAndroid_Updated\QLCT\app\src\main\AndroidManifest.xml:34:13-55
+52        <activity
+52-->C:\Users\voduc\.gemini\antigravity\scratch\QuanLyChiTieuAndroid_Updated\QLCT\app\src\main\AndroidManifest.xml:36:9-39:58
+53            android:name="com.example.quanlychitieu.ForgotPasswordActivity"
+53-->C:\Users\voduc\.gemini\antigravity\scratch\QuanLyChiTieuAndroid_Updated\QLCT\app\src\main\AndroidManifest.xml:37:13-51
+54            android:theme="@style/Theme.QuanLyChiTieu.Auth"
+54-->C:\Users\voduc\.gemini\antigravity\scratch\QuanLyChiTieuAndroid_Updated\QLCT\app\src\main\AndroidManifest.xml:38:13-60
+55            android:windowSoftInputMode="adjustResize" />
+55-->C:\Users\voduc\.gemini\antigravity\scratch\QuanLyChiTieuAndroid_Updated\QLCT\app\src\main\AndroidManifest.xml:39:13-55
+56        <activity android:name="com.example.quanlychitieu.MainActivity" />
+56-->C:\Users\voduc\.gemini\antigravity\scratch\QuanLyChiTieuAndroid_Updated\QLCT\app\src\main\AndroidManifest.xml:41:9-50
+56-->C:\Users\voduc\.gemini\antigravity\scratch\QuanLyChiTieuAndroid_Updated\QLCT\app\src\main\AndroidManifest.xml:41:19-47
+57        <activity
+57-->C:\Users\voduc\.gemini\antigravity\scratch\QuanLyChiTieuAndroid_Updated\QLCT\app\src\main\AndroidManifest.xml:43:9-45:58
+58            android:name="com.example.quanlychitieu.AddTransactionActivity"
+58-->C:\Users\voduc\.gemini\antigravity\scratch\QuanLyChiTieuAndroid_Updated\QLCT\app\src\main\AndroidManifest.xml:44:13-51
+59            android:windowSoftInputMode="adjustResize" />
+59-->C:\Users\voduc\.gemini\antigravity\scratch\QuanLyChiTieuAndroid_Updated\QLCT\app\src\main\AndroidManifest.xml:45:13-55
+60        <activity android:name="com.example.quanlychitieu.ManageCategoriesActivity" />
+60-->C:\Users\voduc\.gemini\antigravity\scratch\QuanLyChiTieuAndroid_Updated\QLCT\app\src\main\AndroidManifest.xml:47:9-62
+60-->C:\Users\voduc\.gemini\antigravity\scratch\QuanLyChiTieuAndroid_Updated\QLCT\app\src\main\AndroidManifest.xml:47:19-59
+61        <activity
+61-->C:\Users\voduc\.gemini\antigravity\scratch\QuanLyChiTieuAndroid_Updated\QLCT\app\src\main\AndroidManifest.xml:49:9-51:58
+62            android:name="com.example.quanlychitieu.SavingsGoalActivity"
+62-->C:\Users\voduc\.gemini\antigravity\scratch\QuanLyChiTieuAndroid_Updated\QLCT\app\src\main\AndroidManifest.xml:50:13-48
+63            android:windowSoftInputMode="adjustResize" />
+63-->C:\Users\voduc\.gemini\antigravity\scratch\QuanLyChiTieuAndroid_Updated\QLCT\app\src\main\AndroidManifest.xml:51:13-55
+64        <activity
+64-->C:\Users\voduc\.gemini\antigravity\scratch\QuanLyChiTieuAndroid_Updated\QLCT\app\src\main\AndroidManifest.xml:53:9-55:58
+65            android:name="com.example.quanlychitieu.RecurringTransactionsActivity"
+65-->C:\Users\voduc\.gemini\antigravity\scratch\QuanLyChiTieuAndroid_Updated\QLCT\app\src\main\AndroidManifest.xml:54:13-58
+66            android:windowSoftInputMode="adjustResize" />
+66-->C:\Users\voduc\.gemini\antigravity\scratch\QuanLyChiTieuAndroid_Updated\QLCT\app\src\main\AndroidManifest.xml:55:13-55
+67        <activity android:name="com.example.quanlychitieu.NotificationSettingsActivity" />
+67-->C:\Users\voduc\.gemini\antigravity\scratch\QuanLyChiTieuAndroid_Updated\QLCT\app\src\main\AndroidManifest.xml:57:9-66
+67-->C:\Users\voduc\.gemini\antigravity\scratch\QuanLyChiTieuAndroid_Updated\QLCT\app\src\main\AndroidManifest.xml:57:19-63
+68
+69        <!-- Receivers for Scheduled Reminders and Alarms -->
+70        <receiver
+70-->C:\Users\voduc\.gemini\antigravity\scratch\QuanLyChiTieuAndroid_Updated\QLCT\app\src\main\AndroidManifest.xml:60:9-62:40
+71            android:name="com.example.quanlychitieu.DailyReminderReceiver"
+71-->C:\Users\voduc\.gemini\antigravity\scratch\QuanLyChiTieuAndroid_Updated\QLCT\app\src\main\AndroidManifest.xml:61:13-50
+72            android:exported="false" />
+72-->C:\Users\voduc\.gemini\antigravity\scratch\QuanLyChiTieuAndroid_Updated\QLCT\app\src\main\AndroidManifest.xml:62:13-37
+73        <receiver
+73-->C:\Users\voduc\.gemini\antigravity\scratch\QuanLyChiTieuAndroid_Updated\QLCT\app\src\main\AndroidManifest.xml:64:9-70:20
+74            android:name="com.example.quanlychitieu.BootReceiver"
+74-->C:\Users\voduc\.gemini\antigravity\scratch\QuanLyChiTieuAndroid_Updated\QLCT\app\src\main\AndroidManifest.xml:65:13-41
+75            android:exported="true" >
+75-->C:\Users\voduc\.gemini\antigravity\scratch\QuanLyChiTieuAndroid_Updated\QLCT\app\src\main\AndroidManifest.xml:66:13-36
+76            <intent-filter>
+76-->C:\Users\voduc\.gemini\antigravity\scratch\QuanLyChiTieuAndroid_Updated\QLCT\app\src\main\AndroidManifest.xml:67:13-69:29
+77                <action android:name="android.intent.action.BOOT_COMPLETED" />
+77-->C:\Users\voduc\.gemini\antigravity\scratch\QuanLyChiTieuAndroid_Updated\QLCT\app\src\main\AndroidManifest.xml:68:17-79
+77-->C:\Users\voduc\.gemini\antigravity\scratch\QuanLyChiTieuAndroid_Updated\QLCT\app\src\main\AndroidManifest.xml:68:25-76
+78            </intent-filter>
+79        </receiver>
+80
+81        <!-- FileProvider for Sharing Exported PDF and Excel/CSV Reports -->
+82        <provider
+83            android:name="androidx.core.content.FileProvider"
+83-->C:\Users\voduc\.gemini\antigravity\scratch\QuanLyChiTieuAndroid_Updated\QLCT\app\src\main\AndroidManifest.xml:74:13-62
+84            android:authorities="com.example.quanlychitieu.fileprovider"
+84-->C:\Users\voduc\.gemini\antigravity\scratch\QuanLyChiTieuAndroid_Updated\QLCT\app\src\main\AndroidManifest.xml:75:13-64
+85            android:exported="false"
+85-->C:\Users\voduc\.gemini\antigravity\scratch\QuanLyChiTieuAndroid_Updated\QLCT\app\src\main\AndroidManifest.xml:76:13-37
+86            android:grantUriPermissions="true" >
+86-->C:\Users\voduc\.gemini\antigravity\scratch\QuanLyChiTieuAndroid_Updated\QLCT\app\src\main\AndroidManifest.xml:77:13-47
+87            <meta-data
+87-->C:\Users\voduc\.gemini\antigravity\scratch\QuanLyChiTieuAndroid_Updated\QLCT\app\src\main\AndroidManifest.xml:78:13-80:54
+88                android:name="android.support.FILE_PROVIDER_PATHS"
+88-->C:\Users\voduc\.gemini\antigravity\scratch\QuanLyChiTieuAndroid_Updated\QLCT\app\src\main\AndroidManifest.xml:79:17-67
+89                android:resource="@xml/file_paths" />
+89-->C:\Users\voduc\.gemini\antigravity\scratch\QuanLyChiTieuAndroid_Updated\QLCT\app\src\main\AndroidManifest.xml:80:17-51
+90        </provider>
+91
+92        <activity
+92-->[com.google.firebase:firebase-auth:23.0.0] C:\Users\voduc\.gradle\caches\transforms-4\d709e4dc9a0ed10887260e7367f321b9\transformed\firebase-auth-23.0.0\AndroidManifest.xml:29:9-46:20
+93            android:name="com.google.firebase.auth.internal.GenericIdpActivity"
+93-->[com.google.firebase:firebase-auth:23.0.0] C:\Users\voduc\.gradle\caches\transforms-4\d709e4dc9a0ed10887260e7367f321b9\transformed\firebase-auth-23.0.0\AndroidManifest.xml:30:13-80
+94            android:excludeFromRecents="true"
+94-->[com.google.firebase:firebase-auth:23.0.0] C:\Users\voduc\.gradle\caches\transforms-4\d709e4dc9a0ed10887260e7367f321b9\transformed\firebase-auth-23.0.0\AndroidManifest.xml:31:13-46
+95            android:exported="true"
+95-->[com.google.firebase:firebase-auth:23.0.0] C:\Users\voduc\.gradle\caches\transforms-4\d709e4dc9a0ed10887260e7367f321b9\transformed\firebase-auth-23.0.0\AndroidManifest.xml:32:13-36
+96            android:launchMode="singleTask"
+96-->[com.google.firebase:firebase-auth:23.0.0] C:\Users\voduc\.gradle\caches\transforms-4\d709e4dc9a0ed10887260e7367f321b9\transformed\firebase-auth-23.0.0\AndroidManifest.xml:33:13-44
+97            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+97-->[com.google.firebase:firebase-auth:23.0.0] C:\Users\voduc\.gradle\caches\transforms-4\d709e4dc9a0ed10887260e7367f321b9\transformed\firebase-auth-23.0.0\AndroidManifest.xml:34:13-72
+98            <intent-filter>
+98-->[com.google.firebase:firebase-auth:23.0.0] C:\Users\voduc\.gradle\caches\transforms-4\d709e4dc9a0ed10887260e7367f321b9\transformed\firebase-auth-23.0.0\AndroidManifest.xml:35:13-45:29
+99                <action android:name="android.intent.action.VIEW" />
+99-->[com.google.firebase:firebase-auth:23.0.0] C:\Users\voduc\.gradle\caches\transforms-4\d709e4dc9a0ed10887260e7367f321b9\transformed\firebase-auth-23.0.0\AndroidManifest.xml:36:17-69
+99-->[com.google.firebase:firebase-auth:23.0.0] C:\Users\voduc\.gradle\caches\transforms-4\d709e4dc9a0ed10887260e7367f321b9\transformed\firebase-auth-23.0.0\AndroidManifest.xml:36:25-66
+100
+101                <category android:name="android.intent.category.DEFAULT" />
+101-->[com.google.firebase:firebase-auth:23.0.0] C:\Users\voduc\.gradle\caches\transforms-4\d709e4dc9a0ed10887260e7367f321b9\transformed\firebase-auth-23.0.0\AndroidManifest.xml:38:17-76
+101-->[com.google.firebase:firebase-auth:23.0.0] C:\Users\voduc\.gradle\caches\transforms-4\d709e4dc9a0ed10887260e7367f321b9\transformed\firebase-auth-23.0.0\AndroidManifest.xml:38:27-73
+102                <category android:name="android.intent.category.BROWSABLE" />
+102-->[com.google.firebase:firebase-auth:23.0.0] C:\Users\voduc\.gradle\caches\transforms-4\d709e4dc9a0ed10887260e7367f321b9\transformed\firebase-auth-23.0.0\AndroidManifest.xml:39:17-78
+102-->[com.google.firebase:firebase-auth:23.0.0] C:\Users\voduc\.gradle\caches\transforms-4\d709e4dc9a0ed10887260e7367f321b9\transformed\firebase-auth-23.0.0\AndroidManifest.xml:39:27-75
+103
+104                <data
+104-->[com.google.firebase:firebase-auth:23.0.0] C:\Users\voduc\.gradle\caches\transforms-4\d709e4dc9a0ed10887260e7367f321b9\transformed\firebase-auth-23.0.0\AndroidManifest.xml:41:17-44:51
+105                    android:host="firebase.auth"
+105-->[com.google.firebase:firebase-auth:23.0.0] C:\Users\voduc\.gradle\caches\transforms-4\d709e4dc9a0ed10887260e7367f321b9\transformed\firebase-auth-23.0.0\AndroidManifest.xml:42:21-49
+106                    android:path="/"
+106-->[com.google.firebase:firebase-auth:23.0.0] C:\Users\voduc\.gradle\caches\transforms-4\d709e4dc9a0ed10887260e7367f321b9\transformed\firebase-auth-23.0.0\AndroidManifest.xml:43:21-37
+107                    android:scheme="genericidp" />
+107-->[com.google.firebase:firebase-auth:23.0.0] C:\Users\voduc\.gradle\caches\transforms-4\d709e4dc9a0ed10887260e7367f321b9\transformed\firebase-auth-23.0.0\AndroidManifest.xml:44:21-48
+108            </intent-filter>
+109        </activity>
+110        <activity
+110-->[com.google.firebase:firebase-auth:23.0.0] C:\Users\voduc\.gradle\caches\transforms-4\d709e4dc9a0ed10887260e7367f321b9\transformed\firebase-auth-23.0.0\AndroidManifest.xml:47:9-64:20
+111            android:name="com.google.firebase.auth.internal.RecaptchaActivity"
+111-->[com.google.firebase:firebase-auth:23.0.0] C:\Users\voduc\.gradle\caches\transforms-4\d709e4dc9a0ed10887260e7367f321b9\transformed\firebase-auth-23.0.0\AndroidManifest.xml:48:13-79
+112            android:excludeFromRecents="true"
+112-->[com.google.firebase:firebase-auth:23.0.0] C:\Users\voduc\.gradle\caches\transforms-4\d709e4dc9a0ed10887260e7367f321b9\transformed\firebase-auth-23.0.0\AndroidManifest.xml:49:13-46
+113            android:exported="true"
+113-->[com.google.firebase:firebase-auth:23.0.0] C:\Users\voduc\.gradle\caches\transforms-4\d709e4dc9a0ed10887260e7367f321b9\transformed\firebase-auth-23.0.0\AndroidManifest.xml:50:13-36
+114            android:launchMode="singleTask"
+114-->[com.google.firebase:firebase-auth:23.0.0] C:\Users\voduc\.gradle\caches\transforms-4\d709e4dc9a0ed10887260e7367f321b9\transformed\firebase-auth-23.0.0\AndroidManifest.xml:51:13-44
+115            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+115-->[com.google.firebase:firebase-auth:23.0.0] C:\Users\voduc\.gradle\caches\transforms-4\d709e4dc9a0ed10887260e7367f321b9\transformed\firebase-auth-23.0.0\AndroidManifest.xml:52:13-72
+116            <intent-filter>
+116-->[com.google.firebase:firebase-auth:23.0.0] C:\Users\voduc\.gradle\caches\transforms-4\d709e4dc9a0ed10887260e7367f321b9\transformed\firebase-auth-23.0.0\AndroidManifest.xml:53:13-63:29
+117                <action android:name="android.intent.action.VIEW" />
+117-->[com.google.firebase:firebase-auth:23.0.0] C:\Users\voduc\.gradle\caches\transforms-4\d709e4dc9a0ed10887260e7367f321b9\transformed\firebase-auth-23.0.0\AndroidManifest.xml:36:17-69
+117-->[com.google.firebase:firebase-auth:23.0.0] C:\Users\voduc\.gradle\caches\transforms-4\d709e4dc9a0ed10887260e7367f321b9\transformed\firebase-auth-23.0.0\AndroidManifest.xml:36:25-66
+118
+119                <category android:name="android.intent.category.DEFAULT" />
+119-->[com.google.firebase:firebase-auth:23.0.0] C:\Users\voduc\.gradle\caches\transforms-4\d709e4dc9a0ed10887260e7367f321b9\transformed\firebase-auth-23.0.0\AndroidManifest.xml:38:17-76
+119-->[com.google.firebase:firebase-auth:23.0.0] C:\Users\voduc\.gradle\caches\transforms-4\d709e4dc9a0ed10887260e7367f321b9\transformed\firebase-auth-23.0.0\AndroidManifest.xml:38:27-73
+120                <category android:name="android.intent.category.BROWSABLE" />
+120-->[com.google.firebase:firebase-auth:23.0.0] C:\Users\voduc\.gradle\caches\transforms-4\d709e4dc9a0ed10887260e7367f321b9\transformed\firebase-auth-23.0.0\AndroidManifest.xml:39:17-78
+120-->[com.google.firebase:firebase-auth:23.0.0] C:\Users\voduc\.gradle\caches\transforms-4\d709e4dc9a0ed10887260e7367f321b9\transformed\firebase-auth-23.0.0\AndroidManifest.xml:39:27-75
+121
+122                <data
+122-->[com.google.firebase:firebase-auth:23.0.0] C:\Users\voduc\.gradle\caches\transforms-4\d709e4dc9a0ed10887260e7367f321b9\transformed\firebase-auth-23.0.0\AndroidManifest.xml:41:17-44:51
+123                    android:host="firebase.auth"
+123-->[com.google.firebase:firebase-auth:23.0.0] C:\Users\voduc\.gradle\caches\transforms-4\d709e4dc9a0ed10887260e7367f321b9\transformed\firebase-auth-23.0.0\AndroidManifest.xml:42:21-49
+124                    android:path="/"
+124-->[com.google.firebase:firebase-auth:23.0.0] C:\Users\voduc\.gradle\caches\transforms-4\d709e4dc9a0ed10887260e7367f321b9\transformed\firebase-auth-23.0.0\AndroidManifest.xml:43:21-37
+125                    android:scheme="recaptcha" />
+125-->[com.google.firebase:firebase-auth:23.0.0] C:\Users\voduc\.gradle\caches\transforms-4\d709e4dc9a0ed10887260e7367f321b9\transformed\firebase-auth-23.0.0\AndroidManifest.xml:44:21-48
+126            </intent-filter>
+127        </activity>
+128
+129        <service
+129-->[com.google.firebase:firebase-auth:23.0.0] C:\Users\voduc\.gradle\caches\transforms-4\d709e4dc9a0ed10887260e7367f321b9\transformed\firebase-auth-23.0.0\AndroidManifest.xml:66:9-72:19
+130            android:name="com.google.firebase.components.ComponentDiscoveryService"
+130-->[com.google.firebase:firebase-auth:23.0.0] C:\Users\voduc\.gradle\caches\transforms-4\d709e4dc9a0ed10887260e7367f321b9\transformed\firebase-auth-23.0.0\AndroidManifest.xml:67:13-84
+131            android:directBootAware="true"
+131-->[com.google.firebase:firebase-common:21.0.0] C:\Users\voduc\.gradle\caches\transforms-4\33e10710f06f446bab6da981c8baf272\transformed\firebase-common-21.0.0\AndroidManifest.xml:32:13-43
+132            android:exported="false" >
+132-->[com.google.firebase:firebase-auth:23.0.0] C:\Users\voduc\.gradle\caches\transforms-4\d709e4dc9a0ed10887260e7367f321b9\transformed\firebase-auth-23.0.0\AndroidManifest.xml:68:13-37
+133            <meta-data
+133-->[com.google.firebase:firebase-auth:23.0.0] C:\Users\voduc\.gradle\caches\transforms-4\d709e4dc9a0ed10887260e7367f321b9\transformed\firebase-auth-23.0.0\AndroidManifest.xml:69:13-71:85
+134                android:name="com.google.firebase.components:com.google.firebase.auth.FirebaseAuthRegistrar"
+134-->[com.google.firebase:firebase-auth:23.0.0] C:\Users\voduc\.gradle\caches\transforms-4\d709e4dc9a0ed10887260e7367f321b9\transformed\firebase-auth-23.0.0\AndroidManifest.xml:70:17-109
+135                android:value="com.google.firebase.components.ComponentRegistrar" />
+135-->[com.google.firebase:firebase-auth:23.0.0] C:\Users\voduc\.gradle\caches\transforms-4\d709e4dc9a0ed10887260e7367f321b9\transformed\firebase-auth-23.0.0\AndroidManifest.xml:71:17-82
+136            <meta-data
+136-->[com.google.firebase:firebase-common-ktx:21.0.0] C:\Users\voduc\.gradle\caches\transforms-4\5f4c9450f2b2c3aecd765b8786f98831\transformed\firebase-common-ktx-21.0.0\AndroidManifest.xml:12:13-14:85
+137                android:name="com.google.firebase.components:com.google.firebase.ktx.FirebaseCommonLegacyRegistrar"
+137-->[com.google.firebase:firebase-common-ktx:21.0.0] C:\Users\voduc\.gradle\caches\transforms-4\5f4c9450f2b2c3aecd765b8786f98831\transformed\firebase-common-ktx-21.0.0\AndroidManifest.xml:13:17-116
+138                android:value="com.google.firebase.components.ComponentRegistrar" />
+138-->[com.google.firebase:firebase-common-ktx:21.0.0] C:\Users\voduc\.gradle\caches\transforms-4\5f4c9450f2b2c3aecd765b8786f98831\transformed\firebase-common-ktx-21.0.0\AndroidManifest.xml:14:17-82
+139            <meta-data
+139-->[com.google.firebase:firebase-common:21.0.0] C:\Users\voduc\.gradle\caches\transforms-4\33e10710f06f446bab6da981c8baf272\transformed\firebase-common-21.0.0\AndroidManifest.xml:35:13-37:85
+140                android:name="com.google.firebase.components:com.google.firebase.FirebaseCommonKtxRegistrar"
+140-->[com.google.firebase:firebase-common:21.0.0] C:\Users\voduc\.gradle\caches\transforms-4\33e10710f06f446bab6da981c8baf272\transformed\firebase-common-21.0.0\AndroidManifest.xml:36:17-109
+141                android:value="com.google.firebase.components.ComponentRegistrar" />
+141-->[com.google.firebase:firebase-common:21.0.0] C:\Users\voduc\.gradle\caches\transforms-4\33e10710f06f446bab6da981c8baf272\transformed\firebase-common-21.0.0\AndroidManifest.xml:37:17-82
+142        </service>
+143        <service
+143-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] C:\Users\voduc\.gradle\caches\transforms-4\f068eb95c4a97feee45a9e8e7298e1d2\transformed\credentials-play-services-auth-1.2.0-rc01\AndroidManifest.xml:24:9-32:19
+144            android:name="androidx.credentials.playservices.CredentialProviderMetadataHolder"
+144-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] C:\Users\voduc\.gradle\caches\transforms-4\f068eb95c4a97feee45a9e8e7298e1d2\transformed\credentials-play-services-auth-1.2.0-rc01\AndroidManifest.xml:25:13-94
+145            android:enabled="true"
+145-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] C:\Users\voduc\.gradle\caches\transforms-4\f068eb95c4a97feee45a9e8e7298e1d2\transformed\credentials-play-services-auth-1.2.0-rc01\AndroidManifest.xml:26:13-35
+146            android:exported="false" >
+146-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] C:\Users\voduc\.gradle\caches\transforms-4\f068eb95c4a97feee45a9e8e7298e1d2\transformed\credentials-play-services-auth-1.2.0-rc01\AndroidManifest.xml:27:13-37
+147            <meta-data
+147-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] C:\Users\voduc\.gradle\caches\transforms-4\f068eb95c4a97feee45a9e8e7298e1d2\transformed\credentials-play-services-auth-1.2.0-rc01\AndroidManifest.xml:29:13-31:104
+148                android:name="androidx.credentials.CREDENTIAL_PROVIDER_KEY"
+148-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] C:\Users\voduc\.gradle\caches\transforms-4\f068eb95c4a97feee45a9e8e7298e1d2\transformed\credentials-play-services-auth-1.2.0-rc01\AndroidManifest.xml:30:17-76
+149                android:value="androidx.credentials.playservices.CredentialProviderPlayServicesImpl" />
+149-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] C:\Users\voduc\.gradle\caches\transforms-4\f068eb95c4a97feee45a9e8e7298e1d2\transformed\credentials-play-services-auth-1.2.0-rc01\AndroidManifest.xml:31:17-101
+150        </service>
+151
+152        <activity
+152-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] C:\Users\voduc\.gradle\caches\transforms-4\f068eb95c4a97feee45a9e8e7298e1d2\transformed\credentials-play-services-auth-1.2.0-rc01\AndroidManifest.xml:34:9-41:20
+153            android:name="androidx.credentials.playservices.HiddenActivity"
+153-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] C:\Users\voduc\.gradle\caches\transforms-4\f068eb95c4a97feee45a9e8e7298e1d2\transformed\credentials-play-services-auth-1.2.0-rc01\AndroidManifest.xml:35:13-76
+154            android:configChanges="orientation|screenSize|screenLayout|keyboardHidden"
+154-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] C:\Users\voduc\.gradle\caches\transforms-4\f068eb95c4a97feee45a9e8e7298e1d2\transformed\credentials-play-services-auth-1.2.0-rc01\AndroidManifest.xml:36:13-87
+155            android:enabled="true"
+155-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] C:\Users\voduc\.gradle\caches\transforms-4\f068eb95c4a97feee45a9e8e7298e1d2\transformed\credentials-play-services-auth-1.2.0-rc01\AndroidManifest.xml:37:13-35
+156            android:exported="false"
+156-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] C:\Users\voduc\.gradle\caches\transforms-4\f068eb95c4a97feee45a9e8e7298e1d2\transformed\credentials-play-services-auth-1.2.0-rc01\AndroidManifest.xml:38:13-37
+157            android:fitsSystemWindows="true"
+157-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] C:\Users\voduc\.gradle\caches\transforms-4\f068eb95c4a97feee45a9e8e7298e1d2\transformed\credentials-play-services-auth-1.2.0-rc01\AndroidManifest.xml:39:13-45
+158            android:theme="@style/Theme.Hidden" >
+158-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] C:\Users\voduc\.gradle\caches\transforms-4\f068eb95c4a97feee45a9e8e7298e1d2\transformed\credentials-play-services-auth-1.2.0-rc01\AndroidManifest.xml:40:13-48
+159        </activity>
+160        <activity
+160-->[com.google.android.gms:play-services-auth:21.2.0] C:\Users\voduc\.gradle\caches\transforms-4\f9d3a74d040df2cf0e403504beb0ccfc\transformed\play-services-auth-21.2.0\AndroidManifest.xml:23:9-27:75
+161            android:name="com.google.android.gms.auth.api.signin.internal.SignInHubActivity"
+161-->[com.google.android.gms:play-services-auth:21.2.0] C:\Users\voduc\.gradle\caches\transforms-4\f9d3a74d040df2cf0e403504beb0ccfc\transformed\play-services-auth-21.2.0\AndroidManifest.xml:24:13-93
+162            android:excludeFromRecents="true"
+162-->[com.google.android.gms:play-services-auth:21.2.0] C:\Users\voduc\.gradle\caches\transforms-4\f9d3a74d040df2cf0e403504beb0ccfc\transformed\play-services-auth-21.2.0\AndroidManifest.xml:25:13-46
+163            android:exported="false"
+163-->[com.google.android.gms:play-services-auth:21.2.0] C:\Users\voduc\.gradle\caches\transforms-4\f9d3a74d040df2cf0e403504beb0ccfc\transformed\play-services-auth-21.2.0\AndroidManifest.xml:26:13-37
+164            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+164-->[com.google.android.gms:play-services-auth:21.2.0] C:\Users\voduc\.gradle\caches\transforms-4\f9d3a74d040df2cf0e403504beb0ccfc\transformed\play-services-auth-21.2.0\AndroidManifest.xml:27:13-72
+165        <!--
+166            Service handling Google Sign-In user revocation. For apps that do not integrate with
+167            Google Sign-In, this service will never be started.
+168        -->
+169        <service
+169-->[com.google.android.gms:play-services-auth:21.2.0] C:\Users\voduc\.gradle\caches\transforms-4\f9d3a74d040df2cf0e403504beb0ccfc\transformed\play-services-auth-21.2.0\AndroidManifest.xml:33:9-37:51
+170            android:name="com.google.android.gms.auth.api.signin.RevocationBoundService"
+170-->[com.google.android.gms:play-services-auth:21.2.0] C:\Users\voduc\.gradle\caches\transforms-4\f9d3a74d040df2cf0e403504beb0ccfc\transformed\play-services-auth-21.2.0\AndroidManifest.xml:34:13-89
+171            android:exported="true"
+171-->[com.google.android.gms:play-services-auth:21.2.0] C:\Users\voduc\.gradle\caches\transforms-4\f9d3a74d040df2cf0e403504beb0ccfc\transformed\play-services-auth-21.2.0\AndroidManifest.xml:35:13-36
+172            android:permission="com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION"
+172-->[com.google.android.gms:play-services-auth:21.2.0] C:\Users\voduc\.gradle\caches\transforms-4\f9d3a74d040df2cf0e403504beb0ccfc\transformed\play-services-auth-21.2.0\AndroidManifest.xml:36:13-107
+173            android:visibleToInstantApps="true" />
+173-->[com.google.android.gms:play-services-auth:21.2.0] C:\Users\voduc\.gradle\caches\transforms-4\f9d3a74d040df2cf0e403504beb0ccfc\transformed\play-services-auth-21.2.0\AndroidManifest.xml:37:13-48
+174
+175        <provider
+175-->[com.google.firebase:firebase-common:21.0.0] C:\Users\voduc\.gradle\caches\transforms-4\33e10710f06f446bab6da981c8baf272\transformed\firebase-common-21.0.0\AndroidManifest.xml:23:9-28:39
+176            android:name="com.google.firebase.provider.FirebaseInitProvider"
+176-->[com.google.firebase:firebase-common:21.0.0] C:\Users\voduc\.gradle\caches\transforms-4\33e10710f06f446bab6da981c8baf272\transformed\firebase-common-21.0.0\AndroidManifest.xml:24:13-77
+177            android:authorities="com.example.quanlychitieu.firebaseinitprovider"
+177-->[com.google.firebase:firebase-common:21.0.0] C:\Users\voduc\.gradle\caches\transforms-4\33e10710f06f446bab6da981c8baf272\transformed\firebase-common-21.0.0\AndroidManifest.xml:25:13-72
+178            android:directBootAware="true"
+178-->[com.google.firebase:firebase-common:21.0.0] C:\Users\voduc\.gradle\caches\transforms-4\33e10710f06f446bab6da981c8baf272\transformed\firebase-common-21.0.0\AndroidManifest.xml:26:13-43
+179            android:exported="false"
+179-->[com.google.firebase:firebase-common:21.0.0] C:\Users\voduc\.gradle\caches\transforms-4\33e10710f06f446bab6da981c8baf272\transformed\firebase-common-21.0.0\AndroidManifest.xml:27:13-37
+180            android:initOrder="100" />
+180-->[com.google.firebase:firebase-common:21.0.0] C:\Users\voduc\.gradle\caches\transforms-4\33e10710f06f446bab6da981c8baf272\transformed\firebase-common-21.0.0\AndroidManifest.xml:28:13-36
+181
+182        <activity
+182-->[com.google.android.gms:play-services-base:18.3.0] C:\Users\voduc\.gradle\caches\transforms-4\ee5c027b15f9b3627c08579c4d596490\transformed\play-services-base-18.3.0\AndroidManifest.xml:20:9-22:45
+183            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+183-->[com.google.android.gms:play-services-base:18.3.0] C:\Users\voduc\.gradle\caches\transforms-4\ee5c027b15f9b3627c08579c4d596490\transformed\play-services-base-18.3.0\AndroidManifest.xml:20:19-85
+184            android:exported="false"
+184-->[com.google.android.gms:play-services-base:18.3.0] C:\Users\voduc\.gradle\caches\transforms-4\ee5c027b15f9b3627c08579c4d596490\transformed\play-services-base-18.3.0\AndroidManifest.xml:22:19-43
+185            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+185-->[com.google.android.gms:play-services-base:18.3.0] C:\Users\voduc\.gradle\caches\transforms-4\ee5c027b15f9b3627c08579c4d596490\transformed\play-services-base-18.3.0\AndroidManifest.xml:21:19-78
+186
+187        <provider
+187-->[androidx.emoji2:emoji2:1.3.0] C:\Users\voduc\.gradle\caches\transforms-4\ac0583742763417d1135d83982b52659\transformed\emoji2-1.3.0\AndroidManifest.xml:24:9-32:20
+188            android:name="androidx.startup.InitializationProvider"
+188-->[androidx.emoji2:emoji2:1.3.0] C:\Users\voduc\.gradle\caches\transforms-4\ac0583742763417d1135d83982b52659\transformed\emoji2-1.3.0\AndroidManifest.xml:25:13-67
+189            android:authorities="com.example.quanlychitieu.androidx-startup"
+189-->[androidx.emoji2:emoji2:1.3.0] C:\Users\voduc\.gradle\caches\transforms-4\ac0583742763417d1135d83982b52659\transformed\emoji2-1.3.0\AndroidManifest.xml:26:13-68
+190            android:exported="false" >
+190-->[androidx.emoji2:emoji2:1.3.0] C:\Users\voduc\.gradle\caches\transforms-4\ac0583742763417d1135d83982b52659\transformed\emoji2-1.3.0\AndroidManifest.xml:27:13-37
+191            <meta-data
+191-->[androidx.emoji2:emoji2:1.3.0] C:\Users\voduc\.gradle\caches\transforms-4\ac0583742763417d1135d83982b52659\transformed\emoji2-1.3.0\AndroidManifest.xml:29:13-31:52
+192                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+192-->[androidx.emoji2:emoji2:1.3.0] C:\Users\voduc\.gradle\caches\transforms-4\ac0583742763417d1135d83982b52659\transformed\emoji2-1.3.0\AndroidManifest.xml:30:17-75
+193                android:value="androidx.startup" />
+193-->[androidx.emoji2:emoji2:1.3.0] C:\Users\voduc\.gradle\caches\transforms-4\ac0583742763417d1135d83982b52659\transformed\emoji2-1.3.0\AndroidManifest.xml:31:17-49
+194            <meta-data
+194-->[androidx.lifecycle:lifecycle-process:2.6.2] C:\Users\voduc\.gradle\caches\transforms-4\677c14173386f127ef492d32865669c7\transformed\lifecycle-process-2.6.2\AndroidManifest.xml:29:13-31:52
+195                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+195-->[androidx.lifecycle:lifecycle-process:2.6.2] C:\Users\voduc\.gradle\caches\transforms-4\677c14173386f127ef492d32865669c7\transformed\lifecycle-process-2.6.2\AndroidManifest.xml:30:17-78
+196                android:value="androidx.startup" />
+196-->[androidx.lifecycle:lifecycle-process:2.6.2] C:\Users\voduc\.gradle\caches\transforms-4\677c14173386f127ef492d32865669c7\transformed\lifecycle-process-2.6.2\AndroidManifest.xml:31:17-49
+197            <meta-data
+197-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\voduc\.gradle\caches\transforms-4\f6c49e7309d412df5a976532433f1c0f\transformed\profileinstaller-1.3.1\AndroidManifest.xml:29:13-31:52
+198                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
+198-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\voduc\.gradle\caches\transforms-4\f6c49e7309d412df5a976532433f1c0f\transformed\profileinstaller-1.3.1\AndroidManifest.xml:30:17-85
+199                android:value="androidx.startup" />
+199-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\voduc\.gradle\caches\transforms-4\f6c49e7309d412df5a976532433f1c0f\transformed\profileinstaller-1.3.1\AndroidManifest.xml:31:17-49
+200        </provider>
+201
+202        <meta-data
+202-->[com.google.android.gms:play-services-basement:18.3.0] C:\Users\voduc\.gradle\caches\transforms-4\41c8ee46e6a1d0d86c9ab81dccbb5aae\transformed\play-services-basement-18.3.0\AndroidManifest.xml:21:9-23:69
+203            android:name="com.google.android.gms.version"
+203-->[com.google.android.gms:play-services-basement:18.3.0] C:\Users\voduc\.gradle\caches\transforms-4\41c8ee46e6a1d0d86c9ab81dccbb5aae\transformed\play-services-basement-18.3.0\AndroidManifest.xml:22:13-58
+204            android:value="@integer/google_play_services_version" />
+204-->[com.google.android.gms:play-services-basement:18.3.0] C:\Users\voduc\.gradle\caches\transforms-4\41c8ee46e6a1d0d86c9ab81dccbb5aae\transformed\play-services-basement-18.3.0\AndroidManifest.xml:23:13-66
+205
+206        <receiver
+206-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\voduc\.gradle\caches\transforms-4\f6c49e7309d412df5a976532433f1c0f\transformed\profileinstaller-1.3.1\AndroidManifest.xml:34:9-52:20
+207            android:name="androidx.profileinstaller.ProfileInstallReceiver"
+207-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\voduc\.gradle\caches\transforms-4\f6c49e7309d412df5a976532433f1c0f\transformed\profileinstaller-1.3.1\AndroidManifest.xml:35:13-76
+208            android:directBootAware="false"
+208-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\voduc\.gradle\caches\transforms-4\f6c49e7309d412df5a976532433f1c0f\transformed\profileinstaller-1.3.1\AndroidManifest.xml:36:13-44
+209            android:enabled="true"
+209-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\voduc\.gradle\caches\transforms-4\f6c49e7309d412df5a976532433f1c0f\transformed\profileinstaller-1.3.1\AndroidManifest.xml:37:13-35
+210            android:exported="true"
+210-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\voduc\.gradle\caches\transforms-4\f6c49e7309d412df5a976532433f1c0f\transformed\profileinstaller-1.3.1\AndroidManifest.xml:38:13-36
+211            android:permission="android.permission.DUMP" >
+211-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\voduc\.gradle\caches\transforms-4\f6c49e7309d412df5a976532433f1c0f\transformed\profileinstaller-1.3.1\AndroidManifest.xml:39:13-57
+212            <intent-filter>
+212-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\voduc\.gradle\caches\transforms-4\f6c49e7309d412df5a976532433f1c0f\transformed\profileinstaller-1.3.1\AndroidManifest.xml:40:13-42:29
+213                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
+213-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\voduc\.gradle\caches\transforms-4\f6c49e7309d412df5a976532433f1c0f\transformed\profileinstaller-1.3.1\AndroidManifest.xml:41:17-91
+213-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\voduc\.gradle\caches\transforms-4\f6c49e7309d412df5a976532433f1c0f\transformed\profileinstaller-1.3.1\AndroidManifest.xml:41:25-88
+214            </intent-filter>
+215            <intent-filter>
+215-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\voduc\.gradle\caches\transforms-4\f6c49e7309d412df5a976532433f1c0f\transformed\profileinstaller-1.3.1\AndroidManifest.xml:43:13-45:29
+216                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
+216-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\voduc\.gradle\caches\transforms-4\f6c49e7309d412df5a976532433f1c0f\transformed\profileinstaller-1.3.1\AndroidManifest.xml:44:17-85
+216-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\voduc\.gradle\caches\transforms-4\f6c49e7309d412df5a976532433f1c0f\transformed\profileinstaller-1.3.1\AndroidManifest.xml:44:25-82
+217            </intent-filter>
+218            <intent-filter>
+218-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\voduc\.gradle\caches\transforms-4\f6c49e7309d412df5a976532433f1c0f\transformed\profileinstaller-1.3.1\AndroidManifest.xml:46:13-48:29
+219                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
+219-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\voduc\.gradle\caches\transforms-4\f6c49e7309d412df5a976532433f1c0f\transformed\profileinstaller-1.3.1\AndroidManifest.xml:47:17-88
+219-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\voduc\.gradle\caches\transforms-4\f6c49e7309d412df5a976532433f1c0f\transformed\profileinstaller-1.3.1\AndroidManifest.xml:47:25-85
+220            </intent-filter>
+221            <intent-filter>
+221-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\voduc\.gradle\caches\transforms-4\f6c49e7309d412df5a976532433f1c0f\transformed\profileinstaller-1.3.1\AndroidManifest.xml:49:13-51:29
+222                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
+222-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\voduc\.gradle\caches\transforms-4\f6c49e7309d412df5a976532433f1c0f\transformed\profileinstaller-1.3.1\AndroidManifest.xml:50:17-95
+222-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\voduc\.gradle\caches\transforms-4\f6c49e7309d412df5a976532433f1c0f\transformed\profileinstaller-1.3.1\AndroidManifest.xml:50:25-92
+223            </intent-filter>
+224        </receiver>
+225    </application>
+226
+227</manifest>

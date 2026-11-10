@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.QuanLyChiTieu" parent="Theme.Material3.Light.NoActionBar">
+        <item name="colorPrimary">@color/wine</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <item name="colorPrimaryContainer">@color/light_red</item>
+        <item name="colorOnPrimaryContainer">@color/wine</item>
+        <item name="colorSecondaryContainer">@color/light_red</item>
+        <item name="colorOnSecondaryContainer">@color/wine</item>
+        <item name="android:colorBackground">@color/white</item>
+        <item name="colorSurface">@color/white</item>
+        <item name="android:statusBarColor">@color/wine</item>
+        <item name="android:windowLightStatusBar">false</item>
+        <item name="android:textColorPrimary">@color/text_dark</item>
+    </style>
+    <style name="Theme.QuanLyChiTieu.Auth">
+        <item name="android:statusBarColor">@color/pink_bg</item>
+        <item name="android:windowLightStatusBar">true</item>
+    </style>
+</resources>

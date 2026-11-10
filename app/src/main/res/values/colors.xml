@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="pink_bg">#FCE8EB</color>
+    <color name="white">#FFFFFF</color>
+    <color name="wine">#913D40</color>
+    <color name="light_red">#F7D5D8</color>
+    <color name="income">#159447</color>
+    <color name="expense">#E53935</color>
+    <color name="income_bg">#E3F4EA</color>
+    <color name="expense_bg">#FDE6E5</color>
+    <color name="text_dark">#3B1F21</color>
+    <color name="text_gray">#8A7476</color>
+    <color name="divider">#EFE3E4</color>
+    <color name="warning">#E65100</color>
+    <color name="warning_bg">#FFF3E0</color>
+</resources>
