@@ -14,7 +14,7 @@
         android:theme="@style/Theme.QuanLyChiTieu">
 
         <activity
-            android:name=".SplashActivity"
+            android:name=".ui.auth.SplashActivity"
             android:exported="true"
             android:theme="@style/Theme.QuanLyChiTieu.Auth">
             <intent-filter>
@@ -24,45 +24,45 @@
         </activity>
 
         <activity
-            android:name=".LoginActivity"
+            android:name=".ui.auth.LoginActivity"
             android:theme="@style/Theme.QuanLyChiTieu.Auth"
             android:windowSoftInputMode="adjustResize" />
 
         <activity
-            android:name=".RegisterActivity"
+            android:name=".ui.auth.RegisterActivity"
             android:theme="@style/Theme.QuanLyChiTieu.Auth"
             android:windowSoftInputMode="adjustResize" />
 
         <activity
-            android:name=".ForgotPasswordActivity"
+            android:name=".ui.auth.ForgotPasswordActivity"
             android:theme="@style/Theme.QuanLyChiTieu.Auth"
             android:windowSoftInputMode="adjustResize" />
 
-        <activity android:name=".MainActivity" />
+        <activity android:name=".ui.activity.MainActivity" />
 
         <activity
-            android:name=".AddTransactionActivity"
+            android:name=".ui.activity.AddTransactionActivity"
             android:windowSoftInputMode="adjustResize" />
 
-        <activity android:name=".ManageCategoriesActivity" />
+        <activity android:name=".ui.activity.ManageCategoriesActivity" />
 
         <activity
-            android:name=".SavingsGoalActivity"
+            android:name=".ui.activity.SavingsGoalActivity"
             android:windowSoftInputMode="adjustResize" />
 
         <activity
-            android:name=".RecurringTransactionsActivity"
+            android:name=".ui.activity.RecurringTransactionsActivity"
             android:windowSoftInputMode="adjustResize" />
 
-        <activity android:name=".NotificationSettingsActivity" />
+        <activity android:name=".ui.activity.NotificationSettingsActivity" />
 
         <!-- Receivers for Scheduled Reminders and Alarms -->
         <receiver
-            android:name=".DailyReminderReceiver"
+            android:name=".receiver.DailyReminderReceiver"
             android:exported="false" />
 
         <receiver
-            android:name=".BootReceiver"
+            android:name=".receiver.BootReceiver"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.BOOT_COMPLETED" />

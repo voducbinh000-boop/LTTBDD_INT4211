@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Dark Mode Colors (High Contrast & AMOLED Friendly) -->
+    <color name="pink_bg">#281B1D</color>
+    <color name="white">#FFFFFF</color>
+    <color name="wine">#D9777B</color>
+    <color name="light_red">#3E272A</color>
+    <color name="income">#4CAF50</color>
+    <color name="expense">#FF6B6B</color>
+    <color name="income_bg">#1B3624</color>
+    <color name="expense_bg">#3B1C1D</color>
+    <color name="text_dark">#F5EBEB</color>
+    <color name="text_gray">#B59FA1</color>
+    <color name="divider">#382A2C</color>
+    <color name="warning">#FFA726</color>
+    <color name="warning_bg">#3A2A14</color>
+
+    <!-- Semantic theme colors (Dark Mode) -->
+    <color name="bg_app">#141213</color>
+    <color name="card_bg">#1E1A1B</color>
+    <color name="search_bg">#282223</color>
+</resources>

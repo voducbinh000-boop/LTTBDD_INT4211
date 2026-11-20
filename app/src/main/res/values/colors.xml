@@ -13,4 +13,9 @@
     <color name="divider">#EFE3E4</color>
     <color name="warning">#E65100</color>
     <color name="warning_bg">#FFF3E0</color>
+
+    <!-- Semantic theme colors (Light Mode) -->
+    <color name="bg_app">#FFFFFF</color>
+    <color name="card_bg">#FFFFFF</color>
+    <color name="search_bg">#F6EEEF</color>
 </resources>
