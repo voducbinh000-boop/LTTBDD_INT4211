@@ -8,6 +8,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.EditText;
 import android.widget.FrameLayout;
+import android.widget.ImageView;
 import android.widget.ProgressBar;
 import android.widget.TextView;
 
@@ -36,6 +37,8 @@ import java.util.List;
 import java.util.Locale;
 
 public class HomeFragment extends Fragment {
+    private ImageView imgHomeAvatar;
+    private TextView tvHomeAvatarFallback;
     private TextView tvGreeting, tvMonthLabel, tvBalance, tvIncome, tvExpense, tvBudgetText, tvEmpty;
     private ProgressBar progress;
     private RecyclerView rv;
@@ -45,6 +48,8 @@ public class HomeFragment extends Fragment {
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle b) {
         View v = inflater.inflate(R.layout.fragment_home, container, false);
+        imgHomeAvatar = v.findViewById(R.id.imgHomeAvatar);
+        tvHomeAvatarFallback = v.findViewById(R.id.tvHomeAvatarFallback);
         tvGreeting = v.findViewById(R.id.tvGreeting);
         tvMonthLabel = v.findViewById(R.id.tvMonthLabel);
         tvBalance = v.findViewById(R.id.tvBalance);
@@ -54,6 +59,8 @@ public class HomeFragment extends Fragment {
         tvEmpty = v.findViewById(R.id.tvEmpty);
         progress = v.findViewById(R.id.progressBudget);
         rv = v.findViewById(R.id.rvRecent);
+
+        v.findViewById(R.id.layoutHomeAvatar).setOnClickListener(x -> ((MainActivity) requireActivity()).selectTab(R.id.nav_profile));
 
         adapter = new TransactionAdapter(false,
                 t -> TransactionActions.show(requireActivity(), t, this::loadData));
@@ -89,6 +96,7 @@ public class HomeFragment extends Fragment {
         DBHelper db = DBHelper.get(requireContext());
         User u = db.getUser(uid);
         tvGreeting.setText("Xin chào,\n" + (u != null ? u.name : "") + " 👋");
+        Utils.loadAvatar(requireContext(), u != null ? u.avatar : null, imgHomeAvatar, tvHomeAvatarFallback, u != null ? u.name : "");
 
         // Quét giao dịch định kỳ đến hạn
         db.processDueRecurringTransactions(uid);

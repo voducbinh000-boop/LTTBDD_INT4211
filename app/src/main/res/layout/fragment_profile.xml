@@ -12,7 +12,7 @@
         android:background="@color/wine"
         android:padding="18dp"
         android:text="Tài Khoản &amp; Cá Nhân"
-        android:textColor="@color/white"
+        android:textColor="@color/header_wine_text"
         android:textSize="20sp"
         android:textStyle="bold" />
 
@@ -27,11 +27,22 @@
             android:paddingBottom="24dp">
 
             <FrameLayout
-                android:layout_width="84dp"
-                android:layout_height="84dp"
+                android:id="@+id/layoutAvatarContainer"
+                android:layout_width="96dp"
+                android:layout_height="96dp"
                 android:layout_gravity="center_horizontal"
                 android:layout_marginTop="20dp"
-                android:background="@drawable/bg_circle">
+                android:background="@drawable/bg_circle"
+                android:clickable="true"
+                android:focusable="true">
+
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:id="@+id/imgAvatar"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop"
+                    android:visibility="gone"
+                    app:shapeAppearanceOverlay="@style/ShapeAppearance.App.CircleImageView" />
 
                 <TextView
                     android:id="@+id/tvAvatar"
@@ -39,9 +50,28 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     android:textColor="@color/wine"
-                    android:textSize="34sp"
+                    android:textSize="36sp"
                     android:textStyle="bold" />
+
+                <ImageView
+                    android:layout_width="28dp"
+                    android:layout_height="28dp"
+                    android:layout_gravity="bottom|end"
+                    android:background="@drawable/bg_circle"
+                    android:backgroundTint="@color/wine"
+                    android:padding="6dp"
+                    android:src="@drawable/ic_edit"
+                    app:tint="@color/white" />
             </FrameLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="6dp"
+                android:text="Chạm để đổi ảnh đại diện"
+                android:textColor="@color/text_gray"
+                android:textSize="12sp" />
 
             <TextView
                 android:id="@+id/tvName"

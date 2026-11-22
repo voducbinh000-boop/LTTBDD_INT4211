@@ -5,6 +5,7 @@ import android.os.Bundle;
 import androidx.activity.result.ActivityResultLauncher;
 import androidx.activity.result.contract.ActivityResultContracts;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.app.AppCompatDelegate;
 
 import com.example.quanlychitieu.R;
 import com.example.quanlychitieu.data.db.DBHelper;
@@ -37,6 +38,16 @@ public class LoginActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        // Áp dụng cấu hình chế độ giao diện đã lưu
+        AppCompatDelegate.setDefaultNightMode(Session.getThemeMode(this));
+
+        // Đã đăng nhập thì vào thẳng Trang chủ, chưa thì hiển thị Đăng nhập
+        if (Session.isLoggedIn(this) && DBHelper.get(this).getUser(Session.userId(this)) != null) {
+            startActivity(new Intent(this, MainActivity.class));
+            finish();
+            return;
+        }
+
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
         db = DBHelper.get(this);

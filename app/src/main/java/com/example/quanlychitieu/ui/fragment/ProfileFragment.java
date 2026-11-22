@@ -5,8 +5,11 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 import android.widget.TextView;
 
+import androidx.activity.result.ActivityResultLauncher;
+import androidx.activity.result.contract.ActivityResultContracts;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AlertDialog;
@@ -34,16 +37,43 @@ import java.io.InputStream;
 import java.io.OutputStream;
 
 public class ProfileFragment extends Fragment {
+    private ImageView imgAvatar;
     private TextView tvAvatar, tvName, tvEmail, tvThemeStatus;
+    private ActivityResultLauncher<String> pickImageLauncher;
+
+    @Override
+    public void onCreate(@Nullable Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        pickImageLauncher = registerForActivityResult(
+                new ActivityResultContracts.GetContent(),
+                uri -> {
+                    if (uri != null && getContext() != null) {
+                        long uid = Session.userId(requireContext());
+                        String savedPath = Utils.saveAvatarFromUri(requireContext(), uri, uid);
+                        if (savedPath != null) {
+                            DBHelper.get(requireContext()).updateUserAvatar(uid, savedPath);
+                            Utils.toast(requireContext(), "Đã cập nhật ảnh đại diện");
+                            loadUserData();
+                        } else {
+                            Utils.toast(requireContext(), "Không thể lưu ảnh đại diện");
+                        }
+                    }
+                }
+        );
+    }
 
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle b) {
         View v = inflater.inflate(R.layout.fragment_profile, container, false);
+        imgAvatar = v.findViewById(R.id.imgAvatar);
         tvAvatar = v.findViewById(R.id.tvAvatar);
         tvName = v.findViewById(R.id.tvName);
         tvEmail = v.findViewById(R.id.tvEmail);
         tvThemeStatus = v.findViewById(R.id.tvThemeStatus);
+
+        // Chạm vào ảnh đại diện để đổi hoặc xóa ảnh
+        v.findViewById(R.id.layoutAvatarContainer).setOnClickListener(x -> showAvatarDialog());
 
         // Mở màn hình Mục tiêu tiết kiệm
         v.findViewById(R.id.rowSavings).setOnClickListener(x ->
@@ -83,13 +113,43 @@ public class ProfileFragment extends Fragment {
     @Override
     public void onResume() {
         super.onResume();
+        loadUserData();
+    }
+
+    private void loadUserData() {
+        if (!isAdded()) return;
         User u = DBHelper.get(requireContext()).getUser(Session.userId(requireContext()));
         if (u != null) {
             tvName.setText(u.name);
             tvEmail.setText(u.email);
-            tvAvatar.setText(u.name.isEmpty() ? "?" : u.name.substring(0, 1).toUpperCase());
+            Utils.loadAvatar(requireContext(), u.avatar, imgAvatar, tvAvatar, u.name);
         }
         updateThemeStatus();
+    }
+
+    private void showAvatarDialog() {
+        long uid = Session.userId(requireContext());
+        User u = DBHelper.get(requireContext()).getUser(uid);
+        boolean hasAvatar = u != null && u.avatar != null && !u.avatar.isEmpty() && new File(u.avatar).exists();
+
+        String[] options = hasAvatar
+                ? new String[]{"Chọn ảnh mới từ thư viện", "Xóa ảnh đại diện"}
+                : new String[]{"Chọn ảnh từ thư viện"};
+
+        new MaterialAlertDialogBuilder(requireContext())
+                .setTitle("Ảnh đại diện")
+                .setItems(options, (dialog, which) -> {
+                    if (which == 0) {
+                        pickImageLauncher.launch("image/*");
+                    } else if (which == 1 && hasAvatar) {
+                        Utils.deleteAvatar(requireContext(), uid);
+                        DBHelper.get(requireContext()).updateUserAvatar(uid, null);
+                        Utils.toast(requireContext(), "Đã xóa ảnh đại diện");
+                        loadUserData();
+                    }
+                })
+                .setNegativeButton("Hủy", null)
+                .show();
     }
 
     private void updateThemeStatus() {

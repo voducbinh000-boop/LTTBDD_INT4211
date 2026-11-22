@@ -29,7 +29,7 @@ import java.util.List;
  */
 public class DBHelper extends SQLiteOpenHelper {
     public static final String DB_NAME = "quanlychitieu.db";
-    public static final int DB_VERSION = 2;
+    public static final int DB_VERSION = 3;
     private static DBHelper instance;
 
     public static synchronized DBHelper get(Context c) {
@@ -42,6 +42,14 @@ public class DBHelper extends SQLiteOpenHelper {
     }
 
     @Override
+    public void onOpen(SQLiteDatabase db) {
+        super.onOpen(db);
+        try {
+            db.execSQL("ALTER TABLE users ADD COLUMN avatar TEXT");
+        } catch (Exception ignored) {}
+    }
+
+    @Override
     public void onCreate(SQLiteDatabase db) {
         // 1. Bảng người dùng
         db.execSQL("CREATE TABLE users (" +
@@ -49,7 +57,8 @@ public class DBHelper extends SQLiteOpenHelper {
                 "name TEXT, " +
                 "email TEXT UNIQUE, " +
                 "password TEXT, " +
-                "firebase_uid TEXT)");
+                "firebase_uid TEXT, " +
+                "avatar TEXT)");
 
         // 2. Bảng danh mục thu/chi
         db.execSQL("CREATE TABLE categories (" +
@@ -128,6 +137,11 @@ public class DBHelper extends SQLiteOpenHelper {
 
     @Override
     public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
+        if (oldVersion < 3) {
+            try {
+                db.execSQL("ALTER TABLE users ADD COLUMN avatar TEXT");
+            } catch (Exception ignored) {}
+        }
         if (oldVersion < 2) {
             // Cập nhật cấu trúc bảng từ phiên bản 1 lên phiên bản 2
             try {
@@ -182,7 +196,7 @@ public class DBHelper extends SQLiteOpenHelper {
 
     public User login(String identifier, String password) {
         Cursor c = getReadableDatabase().rawQuery(
-                "SELECT id, name, email, firebase_uid FROM users " +
+                "SELECT id, name, email, firebase_uid, avatar FROM users " +
                         "WHERE (LOWER(email)=LOWER(?) OR LOWER(name)=LOWER(?)) AND password=?",
                 new String[]{identifier.trim(), identifier.trim(), Utils.hash(password)});
         User u = null;
@@ -193,7 +207,7 @@ public class DBHelper extends SQLiteOpenHelper {
 
     public User getUser(long id) {
         Cursor c = getReadableDatabase().rawQuery(
-                "SELECT id, name, email, firebase_uid FROM users WHERE id=?",
+                "SELECT id, name, email, firebase_uid, avatar FROM users WHERE id=?",
                 new String[]{String.valueOf(id)});
         User u = null;
         if (c.moveToFirst()) u = readUser(c);
@@ -204,7 +218,7 @@ public class DBHelper extends SQLiteOpenHelper {
     public User getUserByEmail(String email) {
         if (email == null) return null;
         Cursor c = getReadableDatabase().rawQuery(
-                "SELECT id, name, email, firebase_uid FROM users WHERE LOWER(email)=LOWER(?)",
+                "SELECT id, name, email, firebase_uid, avatar FROM users WHERE LOWER(email)=LOWER(?)",
                 new String[]{email.trim()});
         User u = null;
         if (c.moveToFirst()) u = readUser(c);
@@ -232,6 +246,12 @@ public class DBHelper extends SQLiteOpenHelper {
         }
     }
 
+    public boolean updateUserAvatar(long userId, String avatarPath) {
+        ContentValues v = new ContentValues();
+        v.put("avatar", avatarPath);
+        return getWritableDatabase().update("users", v, "id=?", new String[]{String.valueOf(userId)}) > 0;
+    }
+
     public boolean resetPassword(String email, String newPassword) {
         ContentValues v = new ContentValues();
         v.put("password", Utils.hash(newPassword));
@@ -254,6 +274,9 @@ public class DBHelper extends SQLiteOpenHelper {
         u.name = c.getString(1);
         u.email = c.getString(2);
         u.firebaseUid = c.getString(3);
+        if (c.getColumnCount() > 4) {
+            u.avatar = c.getString(4);
+        }
         return u;
     }
 

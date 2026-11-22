@@ -14,19 +14,15 @@
         android:theme="@style/Theme.QuanLyChiTieu">
 
         <activity
-            android:name=".ui.auth.SplashActivity"
+            android:name=".ui.auth.LoginActivity"
             android:exported="true"
-            android:theme="@style/Theme.QuanLyChiTieu.Auth">
+            android:theme="@style/Theme.QuanLyChiTieu.Auth"
+            android:windowSoftInputMode="adjustResize">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
-        <activity
-            android:name=".ui.auth.LoginActivity"
-            android:theme="@style/Theme.QuanLyChiTieu.Auth"
-            android:windowSoftInputMode="adjustResize" />
 
         <activity
             android:name=".ui.auth.RegisterActivity"

@@ -12,12 +12,12 @@
             android:id="@+id/btnBack"
             android:layout_width="48dp" android:layout_height="48dp"
             android:background="?attr/selectableItemBackgroundBorderless"
-            android:contentDescription="Quay lại" android:src="@drawable/ic_arrow_back" app:tint="@color/white" />
+            android:contentDescription="Quay lại" android:src="@drawable/ic_arrow_back" app:tint="@color/header_wine_text" />
         <TextView
             android:id="@+id/tvHeader"
             android:layout_width="wrap_content" android:layout_height="wrap_content"
             android:layout_marginStart="8dp" android:text="Thêm giao dịch"
-            android:textColor="@color/white" android:textSize="20sp" android:textStyle="bold" />
+            android:textColor="@color/header_wine_text" android:textSize="20sp" android:textStyle="bold" />
     </LinearLayout>
 
     <com.google.android.material.tabs.TabLayout

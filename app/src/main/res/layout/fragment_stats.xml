@@ -20,7 +20,7 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:text="Báo Cáo Tài Chính"
-            android:textColor="@color/white"
+            android:textColor="@color/header_wine_text"
             android:textSize="20sp"
             android:textStyle="bold" />
 
@@ -144,7 +144,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="14dp"
-                app:cardBackgroundColor="@color/white"
+                app:cardBackgroundColor="@color/card_bg"
                 app:cardCornerRadius="14dp"
                 app:cardElevation="2dp"
                 app:strokeColor="@color/divider"
