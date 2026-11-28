@@ -19,8 +19,8 @@ public class GMailSender {
 
     // Vui lòng cấu hình Email và Mật khẩu ứng dụng (App Password 16 ký tự) của bạn tại đây
     // Hướng dẫn tạo App Password: Gmail -> Quản lý tài khoản Google -> Bảo mật -> Xác minh 2 bước -> Mật khẩu ứng dụng
-    public static String SENDER_EMAIL = "";
-    public static String SENDER_APP_PASSWORD = "";
+    public static String SENDER_EMAIL = "vabshop2026@gmail.com";
+    public static String SENDER_APP_PASSWORD = "wfla crof gmol kpjd";
 
     public interface Callback {
         void onSuccess();

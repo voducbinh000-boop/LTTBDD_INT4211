@@ -71,7 +71,7 @@
                 <com.google.android.material.textfield.TextInputEditText
                     android:id="@+id/edtNote"
                     android:layout_width="match_parent" android:layout_height="wrap_content"
-                    android:hint="Ví dụ: Lương tháng 11" android:inputType="textCapSentences" android:maxLength="100" />
+                    android:hint="Nhập ghi chú (tùy chọn)" android:inputType="textCapSentences" android:maxLength="100" />
             </com.google.android.material.textfield.TextInputLayout>
 
             <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"

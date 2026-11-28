@@ -81,6 +81,9 @@ public class AddTransactionActivity extends AppCompatActivity {
     private String currentType() { return tabType.getSelectedTabPosition() == 0 ? "income" : "expense"; }
 
     private void loadCategories() {
+        boolean isIncome = "income".equals(currentType());
+        edtNote.setHint(isIncome ? "Ví dụ: Lương tháng 11, Tiền thưởng..." : "Ví dụ: Cơm trưa, Mua sắm, Hóa đơn...");
+
         long uid = Session.userId(this);
         categories = db.getCategories(uid, currentType());
         ArrayAdapter<Category> ad = new ArrayAdapter<>(this, android.R.layout.simple_spinner_dropdown_item, categories);
